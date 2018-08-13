@@ -1,0 +1,11 @@
+const Discord = require("discord.js");
+const self = new Discord.Client();
+
+self.on("ready", () => {
+
+console.log("Logged in as " + self.user.tag + ", " + self.user.id);
+self.user.setActivity("idiots", { type: "Watching", url: "https://twitch.tv/muieznx" });
+
+});
+
+self.login(self.login(process.env.TOKEN)
